@@ -20,9 +20,12 @@ function App() {
 
   return (
     <div>
+      <h2>Form Component</h2>
+      <Form />
+      <hr />
       <Like onClick={() => console.log("clicked")} />
       <br />
-      <BsFillCalendarFill color="red" size="40" />
+      <BsFillCalendarFill color="red" size="20" />
       <hr />
       {alertVisible && (
         <Alert onClose={() => setAlertVisibility(false)}>
@@ -44,8 +47,6 @@ function App() {
         onSelectItem={handleSelectItem}
       />
       <hr />
-      <h2>Form Component</h2>
-      <Form />
     </div>
   );
 }
